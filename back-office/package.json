@@ -1,10 +1,11 @@
 {
   "name": "ak-clinic-back-office",
   "version": "1.0.0",
-  "description": "AK Pharmacy &Naturopathy Center Back Office Frontend",
+  "description": "AK Pharmacy & Naturopathy Center Back Office Frontend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mock-api": "json-server -w db.json -p 9000 -r routes.json -q"
   },
   "author": "Morlo Ngongang Mbakop",
   "license": "UNLICENSED",
