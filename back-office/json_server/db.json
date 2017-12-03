@@ -309,52 +309,215 @@
     "id": 7
   },
   "patient": {
-    "age": 48,
-    "diseases": [],
-    "prescriptions": [],
-    "bodyMeasurements": [],
-    "bloodMeasurements": [],
-    "familyHealthHistories": [],
-    "autoimmuneDiseaseMarkers": [],
-    "cancerMarkers": [],
-    "haematologyReports": [],
-    "kidneyAndLiverMarkers": [],
-    "rightVentricularDysfuntionMarkers": [],
+    "age": 61,
+    "diseases": [
+      {
+        "diseaseName": "Diabetes",
+        "date": "2017-12-03T10:28:32.357",
+        "comment": "Prognosticated at Ak Phamacy & Naturopathy",
+        "clinicName": "Ak Pharmacy & Naturopathy Center",
+        "id": 3930
+      }
+    ],
+    "prescriptions": [
+      {
+        "date": "2017-12-03T00:00:00",
+        "prescriptions": [
+          {
+            "medicineName": "Test Medicine 1",
+            "posology": "3 times  daily after meal",
+            "duration": "1 weak",
+            "id": 3
+          },
+          {
+            "medicineName": "Test Medicines 2",
+            "posology": "3 times  daily after meal",
+            "duration": "10 Days",
+            "id": 4
+          }
+        ],
+        "id": 0
+      }
+    ],
+    "bodyMeasurements": [
+      {
+        "unitAbreviation": "kg",
+        "date": "2017-12-03T10:30:43.003",
+        "value": 86.0,
+        "unit": "Kilogram (kg)",
+        "measurementType": "Weight",
+        "id": 14
+      },
+      {
+        "unitAbreviation": "cm",
+        "date": "2017-12-03T10:30:43.003",
+        "value": 178.0,
+        "unit": "Centimeter (cm)",
+        "measurementType": "Height",
+        "id": 13
+      },
+      {
+        "unitAbreviation": "cm",
+        "date": "2017-12-03T10:30:43.003",
+        "value": 100.0,
+        "unit": "Centimeter (cm)",
+        "measurementType": "Waist Circumference",
+        "id": 15
+      },
+      {
+        "unitAbreviation": "cm",
+        "date": "2017-12-03T10:30:43.003",
+        "value": 123.0,
+        "unit": "Centimeter (cm)",
+        "measurementType": "Hips Circumference",
+        "id": 16
+      }
+    ],
+    "bloodMeasurements": [
+      {
+        "unitAbreviation": "mg/dL",
+        "date": "2017-12-03T10:33:58.323",
+        "value": 160.0,
+        "unit": "Milligrams per Decilitre (mg/dL)",
+        "measurementType": "Systolic Blood Pressure",
+        "id": 17
+      },
+      {
+        "unitAbreviation": "mmol/L",
+        "date": "2017-12-03T10:33:58.323",
+        "value": 67.0,
+        "unit": "Millimoles per Litre (mmol/L)",
+        "measurementType": "Random Blood Glucose",
+        "id": 18
+      }
+    ],
+    "familyHealthHistories": [
+      {
+        "age": 62,
+        "deceasedAge": 0,
+        "isAlive": true,
+        "relationship": "Mother",
+        "desease": "None",
+        "comment": "Hello world",
+        "birthDate": "1955-08-09T16:00:00",
+        "deathDate": null,
+        "id": 7
+      }
+    ],
+    "autoimmuneDiseaseMarkers": [
+      {
+        "unitAbreviation": "U/mL",
+        "date": "2017-12-03T12:21:46.507",
+        "value": 234.0,
+        "unit": "Unit per Millilitre (U/mL)",
+        "measurementType": "Anti-Cyclic Citrullinated Peptide (Anti-CCP)",
+        "id": 23
+      }
+    ],
+    "cancerMarkers": [
+      {
+        "unitAbreviation": "U/mL",
+        "date": "2017-12-03T12:19:47.583",
+        "value": 57.0,
+        "unit": "Unit per Millilitre (U/mL)",
+        "measurementType": "Cancer Antigen 19–9 (CA 19-9)",
+        "id": 19
+      }
+    ],
+    "haematologyReports": [
+      {
+        "unitAbreviation": "pg/cell",
+        "date": "2017-12-03T12:21:17.957",
+        "value": 654.0,
+        "unit": "Picograms per cell, (pg/cell)",
+        "measurementType": "Mean Corpuscular Haemoglobin (MCH)",
+        "id": 22
+      }
+    ],
+    "kidneyAndLiverMarkers": [
+      {
+        "unitAbreviation": "mL/min",
+        "date": "2017-12-03T12:20:10.98",
+        "value": 609.0,
+        "unit": "Millilitre per Minute (mL/min)",
+        "measurementType": "Estimated Glomerular Filtration Rate (eGFR)",
+        "id": 20
+      }
+    ],
+    "rightVentricularDysfuntionMarkers": [
+      {
+        "unitAbreviation": "cells/mm^3",
+        "date": "2017-12-03T12:20:48.297",
+        "value": 987.0,
+        "unit": "Cells per Cubic Microlitre (cells/mm^3)",
+        "measurementType": "Cluster of Differentiation 8 Count (CD8 Count)",
+        "id": 21
+      }
+    ],
     "fingerPrint": "",
     "generalInfo": {
-      "referenceNumber": "C 289",
-      "icNumber": "690202145365",
-      "personId": 28638,
+      "referenceNumber": "Y 108",
+      "icNumber": "560402105928",
+      "personId": 41767,
       "ethnicity": "Indian",
       "bloodType": null,
-      "birthDate": "1969-02-02T00:00:00",
+      "birthDate": "1956-04-02T00:00:00",
       "profession": null,
       "country": "Malaysia",
-      "city": "Batu Coves",
-      "state": "Selangor",
-      "postalCode": "68100",
+      "city": "Setapak",
+      "state": "Kuala Lumpur",
+      "postalCode": "35300",
       "maritalStatus": null,
       "nextOfKinName": null,
       "nextOfKinPhoneNumber": null,
       "nextOfKinRelationship": null,
       "appUserId": null,
-      "firstName": "A Chandra Segeran",
-      "lastName": "Alagesu",
-      "gender": "Male",
+      "firstName": "A Yogesvari",
+      "lastName": "Arunasalam",
+      "gender": "Female",
       "picture": null,
       "phoneNumber": null,
       "email": null,
-      "fullAddress": "Lot 2, Jalan 36 Selayang Baru 68100 Batu Coves Selangor D E",
-      "registrationDate": "2017-07-18T13:33:19.157",
+      "fullAddress": "No 104 Blok A3 Seksyen 1 Wangsa Maju Setapak 53300 Kuala Lumpur",
+      "registrationDate": "2017-07-18T14:05:40.13",
       "comment": null,
       "typeOfPerson": 0,
-      "id": 28631
+      "id": 41760
     },
-    "allergies": [],
+    "allergies": [
+      {
+        "date": "2017-12-03T10:34:38.293",
+        "itemName": "Milk",
+        "itemType": "Food",
+        "id": 3
+      },
+      {
+        "date": "2017-12-03T10:34:38.293",
+        "itemName": "Chloride",
+        "itemType": "Medicine",
+        "id": 4
+      }
+    ],
     "lifestyleAndHabit": {
-      "physicalActivity": null,
-      "stressLevel": null,
-      "addictions": []
+      "physicalActivity": {
+        "date": "2017-12-03T11:24:24.307",
+        "frequency": "1.375",
+        "id": 4
+      },
+      "stressLevel": {
+        "date": "2017-12-03T12:09:25.837",
+        "stressLevel": "None",
+        "comment": "Test Dummy comments",
+        "id": 4
+      },
+      "addictions": [
+        {
+          "date": "2017-12-03T12:26:51.863",
+          "itemName": "Alcohol",
+          "frequency": "2 glass a week",
+          "id": 4
+        }
+      ]
     },
     "medicalFiles": []
   },
@@ -866,5 +1029,8 @@
         "frequencyValue": "1.9"
       }
     ]
+  },
+  "delete": {
+    "result": true
   }
 }

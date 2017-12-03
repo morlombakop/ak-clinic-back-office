@@ -1,11 +1,31 @@
 {
   "/api/*": "/$1",
-  "/patient/get-all?itemsPerPage=:itemsPerPage&pageNumber=:pageNumber": "/patients",
   "/medical-personel/get?appUserId=:appUserId": "/medical-personel",
+  "/medical-personel/get-all?clinicId=:clinicId": "/medical-personels",
+  "/medical-personel/get?id=:id": "/medical-personel",
+  "/medical-personel/delete?id=:id": "/delete",
+  "/medical-personel/save": "/medical-personel",
+  "/medical-personel/update": "/medical-personel",
+
+  "/patient/get-all?itemsPerPage=:itemsPerPage&pageNumber=:pageNumber": "/patients",
   "/patient/get?id=:id": "/patient",
+  "/patient/get?referenceNumber=:referenceNumber": "/patient",
+  "/patient/save": "/patient",
+  "/patient/update": "/patient",
+  "/patient/delete?id=:id": "/delete",
+  "/patient/search": "/patients",
+
   "/medical-center/get-all": "/medical-centers",
   "/medical-center/get-all-names": "/medical-center-names",
   "/medical-center/save": "/medical-centers/1",
-  "/medical-personel/get-all?clinicId=:clinicId": "/medical-personels",
+  "/medical-center/update": "/medical-centers/1",
+  "/medical-center/get?id=:id": "/medical-centers/1",
+  "/medical-center/delete?id=:id": "/delete",
+
+  "/user/change-password": "/delete",
+  "/user/is-available-username": "/delete",
+  "/user/is-available-email": "/delete",
+  "/user/delete?appUserId=:appUserId": "/delete",
+
   "/constant/get-all": "/constant"
 }
