@@ -1,0 +1,11 @@
+{
+  "/api/*": "/$1",
+  "/patient/get-all?itemsPerPage=:itemsPerPage&pageNumber=:pageNumber": "/patients",
+  "/medical-personel/get?appUserId=:appUserId": "/medical-personel",
+  "/patient/get?id=:id": "/patient",
+  "/medical-center/get-all": "/medical-centers",
+  "/medical-center/get-all-names": "/medical-center-names",
+  "/medical-center/save": "/medical-centers/1",
+  "/medical-personel/get-all?clinicId=:clinicId": "/medical-personels",
+  "/constant/get-all": "/constant"
+}

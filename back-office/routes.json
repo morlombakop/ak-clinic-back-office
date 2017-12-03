@@ -1,6 +1,0 @@
-{
-  "/api/*": "/$1",
-  "/patient/get-all?itemsPerPage=:itemsPerPage&pageNumber=:pageNumber": "/patients",
-  "/medical-personel/get?appUserId=:appUserId": "/medical-personel",
-  "/patient/get?id=:id": "/patient"
-}

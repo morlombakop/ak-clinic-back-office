@@ -4,8 +4,7 @@
   "description": "AK Pharmacy & Naturopathy Center Back Office Frontend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "mock-api": "json-server -w db.json -p 9000 -r routes.json -q"
+    "mock-api": "cd json_server && json-server -w db.json -p 9000 -r routes.json -m middleware.js -q"
   },
   "author": "Morlo Ngongang Mbakop",
   "license": "UNLICENSED",
