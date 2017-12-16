@@ -1,5 +1,6 @@
 {
   "/api/*": "/$1",
+
   "/medical-personel/get?appUserId=:appUserId": "/medical-personel",
   "/medical-personel/get-all?clinicId=:clinicId": "/medical-personels",
   "/medical-personel/get?id=:id": "/medical-personel",
@@ -26,6 +27,24 @@
   "/user/is-available-username": "/delete",
   "/user/is-available-email": "/delete",
   "/user/delete?appUserId=:appUserId": "/delete",
+
+  "/allergy/get-all": "/allergies",
+  "/allergy/save": "/allergies/3",
+  "/allergy/update": "/allergies/3",
+  "/allergy/delete?id=:id": "/delete",
+  "/allergy/get?id=:id": "/allergies/3",
+
+  "/disease/get-all": "/diseases",
+  "/disease/save": "/diseases/3930",
+  "/disease/update": "/diseases/3930",
+  "/disease/delete?id=:id": "/delete",
+  "/disease/get?id=:id": "/diseases/3930",
+
+  "/prescriptions/get-all": "/prescriptions",
+  "/prescriptions/save": "/prescriptions/3930",
+  "/prescriptions/update": "/prescriptions/3930",
+  "/prescriptions/delete?id=:id": "/delete",
+  "/prescriptions/get?id=:id": "/prescriptions/3930",
 
   "/constant/get-all": "/constant"
 }

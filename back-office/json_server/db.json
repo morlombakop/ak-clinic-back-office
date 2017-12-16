@@ -521,6 +521,49 @@
     },
     "medicalFiles": []
   },
+  "allergies": [
+    {
+      "date": "2017-12-03T10:34:38.293",
+      "itemName": "Milk",
+      "itemType": "Food",
+      "id": 3
+    },
+    {
+      "date": "2017-12-03T10:34:38.293",
+      "itemName": "Chloride",
+      "itemType": "Medicine",
+      "id": 4
+    }
+  ],
+  "diseases": [
+    {
+      "diseaseName": "Diabetes",
+      "date": "2017-12-03T10:28:32.357",
+      "comment": "Prognosticated at Ak Phamacy & Naturopathy",
+      "clinicName": "Ak Pharmacy & Naturopathy Center",
+      "id": 3930
+    }
+  ],
+  "prescriptions": [
+    {
+      "date": "2017-12-03T00:00:00",
+      "prescriptions": [
+        {
+          "medicineName": "Test Medicine 1",
+          "posology": "3 times  daily after meal",
+          "duration": "1 weak",
+          "id": 3
+        },
+        {
+          "medicineName": "Test Medicines 2",
+          "posology": "3 times  daily after meal",
+          "duration": "10 Days",
+          "id": 4
+        }
+      ],
+      "id": 0
+    }
+  ],
   "medical-centers": [
     {
       "registeredBy": "Stephane System Developer",
