@@ -143,6 +143,10 @@ angular-aria@^1.6.7:
   version "1.6.7"
   resolved "https://registry.yarnpkg.com/angular-aria/-/angular-aria-1.6.7.tgz#a108a10fc6616914f6e56a6c2072da87f4e6d342"
 
+angular-local-storage@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/angular-local-storage/-/angular-local-storage-0.7.1.tgz#fbd2730763c29fa9af5725e0186c780621e8cdd2"
+
 angular-material@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/angular-material/-/angular-material-1.1.5.tgz#a5450cd8205e15a7691edc389476094cf86d592b"
@@ -150,6 +154,10 @@ angular-material@^1.1.5:
 angular-messages@^1.6.7:
   version "1.6.7"
   resolved "https://registry.yarnpkg.com/angular-messages/-/angular-messages-1.6.7.tgz#b82943d442929d787547814b394f3481bd36f7e0"
+
+angular-sanitize@^1.6.7:
+  version "1.6.7"
+  resolved "https://registry.yarnpkg.com/angular-sanitize/-/angular-sanitize-1.6.7.tgz#5a3d61ad7b8b699923329635d99248bcfce26408"
 
 angular-translate-once@^1.0.3:
   version "1.0.3"
@@ -3811,6 +3819,10 @@ ncname@1.0.x:
 negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
+
+ng-file-upload@^12.2.13:
+  version "12.2.13"
+  resolved "https://registry.yarnpkg.com/ng-file-upload/-/ng-file-upload-12.2.13.tgz#01800f3872e526f95310f8477e99e4f12d0d8d14"
 
 no-case@^2.2.0:
   version "2.3.2"
