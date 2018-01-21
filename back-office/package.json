@@ -4,7 +4,9 @@
   "description": "AK Pharmacy & Naturopathy Center Back Office Frontend",
   "main": "index.js",
   "scripts": {
+    "serve": "npm-run-all build sart",
     "build": "webpack --config webpack.dev.config.js",
+    "start": "webpack-dev-server --config webpack.dev.config.js --open",
     "mock-api": "cd json_server && json-server -w db.json -p 9000 -r routes.json -m middleware.js -q"
   },
   "author": "Morlo Ngongang Mbakop",
@@ -58,6 +60,7 @@
     "style-loader": "^0.19.1",
     "webpack": "^3.9.1",
     "webpack-dev-middleware": "^2.0.1",
+    "webpack-dev-server": "^2.11.1",
     "webpack-hot-middleware": "^2.21.0",
     "webpack-md5-hash": "^0.0.6"
   }
