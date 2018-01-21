@@ -11,7 +11,7 @@ import 'angular-messages';
 import AppComponent from './app.component';
 import Constants from './config/constants.config'
 // import Common from './common/common';
-// import Components from './components/components';
+import Components from './components/components';
 import Config from './config/config';
 import Colors from './config/colors.config';
 import Security from './config/security.config';
@@ -21,12 +21,12 @@ import Run from './config/run.comfig';
 // import Filters from './filters';
 
 
-import '../robots.txt';
+// import '../robots.txt';
 
 export default angular.module('app', [
   angularMaterial,
   // Common,
-  // Components,
+  Components,
   // Filters,
   ngAnimate,
   'ngMessages',
