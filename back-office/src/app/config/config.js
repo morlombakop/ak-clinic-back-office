@@ -1,4 +1,4 @@
-import enGB from 'resources/locales/en-GB.json';
+import enGB from 'resources/languages/en-GB.json';
 
 export default function config(
   $compileProvider,

@@ -16,7 +16,7 @@ import Config from './config/config';
 import Colors from './config/colors.config';
 import Security from './config/security.config';
 import Routes from './config/routes.config';
-import Run from './config/run.comfig';
+import Run from './config/run.config';
 // import Services from './services/services';
 // import Filters from './filters';
 
