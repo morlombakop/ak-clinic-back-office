@@ -10,7 +10,6 @@ import 'angular-messages';
 
 import AppComponent from './app.component';
 import Constants from './config/constants.config'
-// import Common from './common/common';
 import Components from './components/components';
 import Config from './config/config';
 import Colors from './config/colors.config';

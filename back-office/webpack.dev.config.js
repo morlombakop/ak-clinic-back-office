@@ -2,8 +2,8 @@
 // const { argv } = require('yargs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
-// const CleanWebpackPlugin = require('clean-webpack-plugin');
-// const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const webpack = require('webpack');
 
 const sourceFileList = [
@@ -28,23 +28,38 @@ const scssLoaders = [
   },
 ];
 
-const API_URL = JSON.stringify(process.env.API_URL);
+// const API_URL = JSON.stringify(process.env.API_URL);
 
-if (API_URL) console.log(`API_URL is ${API_URL}`);
+// if (API_URL) console.log(`API_URL is ${API_URL}`);
 
 const config = {
   devtool: 'inline-source-map',
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'src'),
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
   },
   entry: {
     app: path.join(__dirname, 'src/app/app.js'),
   },
   devServer: {
     port: 4000,
-    contentBase: './src',
-    // historyApiFallback: true,
+    contentBase: './dist',
+    historyApiFallback: true,
+    watchContentBase: true,
+    stats: {
+      assets: false,
+      children: false,
+      chunks: false,
+      hash: false,
+      modules: false,
+      publicPath: false,
+      timings: false,
+      version: false,
+      warnings: true,
+      colors: {
+        green: '\u001b[32m',
+      },
+    },
   },
   module: {
     rules: [
@@ -111,7 +126,7 @@ const config = {
       inject: 'body',
       hash: true,
     }),
-    // new ProgressBarPlugin(),
+    new ProgressBarPlugin(),
     // // Automatically move all modules defined outside of application directory to vendor bundle.
     // // If you are using more complicated project structure, consider
     // // to specify common chunks manually.
@@ -119,7 +134,8 @@ const config = {
     //   name: 'vendor',
     //   minChunks: 2,
     // }),
-    // new CleanWebpackPlugin(['src']),
+    new webpack.HotModuleReplacementPlugin(),
+    new CleanWebpackPlugin(['dist']),
     new webpack.LoaderOptionsPlugin({
       // test: /\.xxx$/, // may apply this only for some modules
       options: {
@@ -128,13 +144,6 @@ const config = {
         },
       },
     }),
-    // new webpack.DefinePlugin({
-
-    //   API_URL_PRESET: API_URL,
-    //   IS_MOBILE: JSON.stringify(process.env.IS_MOBILE) || isCordova,
-    //   CDN_URL: JSON.stringify(process.env.CDN_URL) || '/',
-    // }),
-
   ],
   resolve: {
     modules: [
