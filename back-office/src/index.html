@@ -1,20 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>AK Naturophaty and Pharmacy</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AK Naturophaty and Pharmacy Patient Registration System" />
-    <meta name="author" content="Mbakop Ngongang Morlo" />
+  <title>AK Naturophaty and Pharmacy</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AK Naturophaty and Pharmacy Patient Registration System" />
+  <meta name="author" content="Mbakop Ngongang Morlo" />
+  <style>
+    .loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 10000;
+      cursor: wait;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      color: #fff;
+      font-weight: bold;
+      background: rgba(255, 255, 255, 0.8);
+    }
+  </style>
 </head>
 
-<body ng-app="app"
-      layout="row">
-   <app>
+<body ng-app="app" layout="row">
+  <div id="loader">
+    <img src="loader-green.gif" />
+  </div>
+  <app>
 
-   </app>
+  </app>
+  <script>
+    'use strict'
+    // hide loader;
+    function fadeOutEffect() {
+      var loader = document.getElementById("loader");
+      var fadeEffect = setInterval(function () {
+        if (!loader.style.opacity) {
+          loader.style.opacity = 1;
+        }
+        if (loader.style.opacity < 0.1) {
+          clearInterval(fadeEffect);
+        } else {
+          loader.style.opacity -= 0.1;
+        }
+      }, 200);
+    }
 
-<script type="text/javascript" src="bundle.js?7230bf23cf9848e35837"></script></body>
+    fadeOutEffect();
+    // To prevent clickjacking in older browsers that do not support "X-Frame-Options: SAMEORIGIN" header
+    try {
+      top.document.domain;
+    } catch (e) {
+      var f = function () {
+        document.body.innerHTML = '';
+      }
+      setInterval(f, 1);
+      if (document.body) document.body.onload = f;
+    }
+    // For differentiate between browsers(for css and js where necessary)
+    document.documentElement
+      .setAttribute('data-useragent', navigator.userAgent);
+  </script>
+
+</body>
 
 </html>

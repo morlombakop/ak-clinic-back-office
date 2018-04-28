@@ -1,9 +1,14 @@
+/* eslint-disable object-shorthand, func-names */
 const merge = require('webpack-merge');
 const common = require('./webpack.common.config.js');
+const gulp = require('gulp');
 
 module.exports = merge(common, {
   devtool: 'inline-source-map',
   devServer: {
+    after: function (app) {
+      gulp.src('./resources/images/loader-green.gif').pipe(gulp.dest('./dist/'));
+    },
     port: 4000,
     contentBase: './dist',
     hot: true,

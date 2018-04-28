@@ -14,5 +14,9 @@ export default function route(
   $stateProvider
     .state('login', {
       url: '/login',
+    })
+    .state('home', {
+      url: '/home',
+      component: 'main',
     });
 }
